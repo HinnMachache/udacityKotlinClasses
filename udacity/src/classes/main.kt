@@ -1,8 +1,9 @@
 package classes
 
 fun main() {
-    buildAquarium()
+    //buildAquarium()
     //simpleSpice()
+    simpleGeom()
 }
 
 fun buildAquarium(): Aquarium {
@@ -33,4 +34,9 @@ fun simpleSpice() {
             "Bought = ${spice.isBought}")
     spice.customerKey
     //val spice2 = SimpleSpice("homeBased")
+}
+
+fun simpleGeom() {
+    val areaGeometery = BaseGeometry()
+    areaGeometery.area()
 }

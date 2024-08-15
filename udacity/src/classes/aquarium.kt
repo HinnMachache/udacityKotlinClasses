@@ -38,3 +38,7 @@ class Spice (var name: String, var spiciness: String = "mild") {
         println("$name with a level of $spiciness has a value of $heat.")
     }
 }
+
+class BaseGeometry() {
+    fun area(): Unit = throw error("Area() is not implemented")
+}
