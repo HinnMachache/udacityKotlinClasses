@@ -60,3 +60,11 @@ class User(var name: String, var Lname: String ,var age: Int) {
 
 }
 
+class Customer(var Fname: String, var Lname: String = "Last_name", var age: Int = 0) {
+    init {
+        println("First Name: ${this.Fname}")
+        println("Last Name: ${this.Lname}")
+        println("Age: ${this.age}")
+
+    }
+}

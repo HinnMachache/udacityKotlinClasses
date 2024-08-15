@@ -2,7 +2,8 @@ package classes
 
 fun main() {
     //car_obj()
-    playHat()
+    //playHat()
+    airBnB()
 }
 
 fun car_obj() {
@@ -35,4 +36,13 @@ fun playHat() {
     println()
     val client03 = User("Makkonen", "Drew")
 
+}
+
+fun airBnB() {
+    val client01 = Customer("Benny")
+    println()
+    val client02 = Customer("Benny", "Hinn")
+    println()
+    val client03 = Customer("Benny", "Hinn", 21)
+    println()
 }
