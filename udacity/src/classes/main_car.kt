@@ -1,7 +1,8 @@
 package classes
 
 fun main() {
-    car_obj()
+    //car_obj()
+    playHat()
 }
 
 fun car_obj() {
@@ -24,4 +25,14 @@ fun car_obj() {
     car2.move()
     car2.stop()
     println()
+}
+
+fun playHat() {
+
+    val client01 = User("Ann", "Marrie", 17)
+    println()
+    val client02 = User("Jim")
+    println()
+    val client03 = User("Makkonen", "Drew")
+
 }

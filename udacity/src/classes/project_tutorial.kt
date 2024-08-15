@@ -16,3 +16,47 @@ class Car(
 
 
 }
+
+class User(var name: String, var Lname: String ,var age: Int) {
+//    var name: String
+
+//    init {
+//        if (name.lowercase().startsWith('a')){
+//            this.name = name
+//        }
+//        else {
+//            this.name = "User"
+//        }
+//
+//        if (this.age < 18) {
+//            println("You need to acquire an ID")
+//        }
+//
+//        println("First name: ${this.name}")
+//        println("Last name: ${this.Lname}")
+//        println("Age: ${this.age}")
+//    }
+
+//    init {
+//        println("Name = ${this.name}")
+//        println("Last Name = ${this.Lname}")
+//        println("age = ${this.age}")
+//    }
+    constructor(name: String): this(name, Lname = "Last_Name", age = 0) {
+        println("Use 2nd")
+        println("Name = ${this.name}")
+        println("Last Name = ${this.Lname}")
+        println("age = ${this.age}")
+    }
+
+    constructor(name: String, Lname: String): this(name, Lname, age = 0) {
+        println("Use 3rd")
+        println("Name = ${this.name}")
+        println("Last Name = ${this.Lname}")
+        println("age = ${this.age}")
+    }
+
+
+
+}
+
