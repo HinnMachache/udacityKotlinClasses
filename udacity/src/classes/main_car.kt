@@ -3,7 +3,8 @@ package classes
 fun main() {
     //car_obj()
     //playHat()
-    airBnB()
+    // airBnB()
+    sumCalculator()
 }
 
 fun car_obj() {
@@ -45,4 +46,13 @@ fun airBnB() {
     println()
     val client03 = Customer("Benny", "Hinn", 21)
     println()
+    val favMovie = Movie("Red Notice", "12-02-2024", "Very Good")
+    favMovie.dateRelease = "12/02/2020"
+}
+
+fun sumCalculator(){
+    val sum = Calculator.sum(13, 13)    // Companion Objects
+    println(sum)
+    val result = Calculator.sum(45, 86) // Companion Objects
+    println(result)
 }
