@@ -1,5 +1,7 @@
 package classes
 
+import java.sql.Date
+
 class Car(
     var name: String,
     var model: String,
@@ -66,5 +68,17 @@ class Customer(var Fname: String, var Lname: String = "Last_name", var age: Int 
         println("Last Name: ${this.Lname}")
         println("Age: ${this.age}")
 
+    }
+}
+
+class Movie(var name: String, var releaseDate: String, review: String) {
+    lateinit var dateRelease: String
+}
+
+class Calculator() {
+    companion object {  // Companion Object for calculator
+        fun sum(num1: Int, num2: Int): Int {
+            return num1 + num2
+        }
     }
 }
