@@ -3,8 +3,9 @@ package classes
 fun main() {
     //car_obj()
     //playHat()
-    // airBnB()
-    sumCalculator()
+    airBnB()
+    //sumCalculator()
+    //configNetwork()
 }
 
 fun car_obj() {
@@ -40,12 +41,16 @@ fun playHat() {
 }
 
 fun airBnB() {
-    val client01 = Customer("Benny")
+    val client01 = Customer("Benny").Fname
     println()
     val client02 = Customer("Benny", "Hinn")
     println()
     val client03 = Customer("Benny", "Hinn", 21)
     println()
+    val client04 by lazy {
+        Customer("Abel", "Makkonen", 32)        // Initialization by Lazy
+    }
+    println(client04.age)
     val favMovie = Movie("Red Notice", "12-02-2024", "Very Good")
     favMovie.dateRelease = "12/02/2020"
 }
@@ -55,4 +60,11 @@ fun sumCalculator(){
     println(sum)
     val result = Calculator.sum(45, 86) // Companion Objects
     println(result)
+}
+
+fun configNetwork() {
+    println(networkConfig)
+    println(networkConfig)
+    val networkCon = networkConfig
+    println(networkCon)
 }
