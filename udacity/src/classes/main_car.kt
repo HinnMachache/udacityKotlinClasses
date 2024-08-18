@@ -63,8 +63,8 @@ fun sumCalculator(){
 }
 
 fun configNetwork() {
-    println(networkConfig)
-    println(networkConfig)
-    val networkCon = networkConfig
+    println(NetworkConfig)
+    println(NetworkConfig)
+    val networkCon = NetworkConfig
     println(networkCon)
 }

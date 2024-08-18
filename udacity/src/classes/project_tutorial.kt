@@ -1,12 +1,6 @@
 package classes
 
-import java.sql.Date
-
-class Car(
-    var name: String,
-    var model: String,
-    var color: String,
-    var doors: Int) {
+class Car(var name: String, var model: String, var color: String, var doors: Int) {
 
     fun move() {
         println("The car ${name} is moving")
@@ -15,11 +9,9 @@ class Car(
     fun stop() {
         println("The car ${name} has stopped")
     }
-
-
 }
 
-class User(var name: String, var Lname: String ,var age: Int) {
+class User(var name: String, var Lname: String, var age: Int) {
 //    var name: String
 
 //    init {
@@ -39,25 +31,24 @@ class User(var name: String, var Lname: String ,var age: Int) {
 //        println("Age: ${this.age}")
 //    }
 
-//    init {
+    //    init {
 //        println("Name = ${this.name}")
 //        println("Last Name = ${this.Lname}")
 //        println("age = ${this.age}")
 //    }
-    constructor(name: String): this(name, Lname = "Last_Name", age = 0) {
+    constructor(name: String) : this(name, Lname = "Last_Name", age = 0) {
         println("Use 2nd")
         println("Name = ${this.name}")
         println("Last Name = ${this.Lname}")
         println("age = ${this.age}")
     }
 
-    constructor(name: String, Lname: String): this(name, Lname, age = 0) {
+    constructor(name: String, Lname: String) : this(name, Lname, age = 0) {
         println("Use 3rd")
         println("Name = ${this.name}")
         println("Last Name = ${this.Lname}")
         println("age = ${this.age}")
     }
-
 
 
 }
@@ -88,7 +79,7 @@ class Database private constructor() {
         private var instance: Database? = null
 
         fun getInstance(): Database? {
-            if (instance == null){
+            if (instance == null) {
                 instance = Database()
             }
 
@@ -97,7 +88,7 @@ class Database private constructor() {
     }
 }
 
-object networkConfig {
+object NetworkConfig {
     init {
         println("Network Configured")   // Singleton Object
     }
