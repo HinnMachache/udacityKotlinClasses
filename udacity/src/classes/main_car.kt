@@ -3,9 +3,11 @@ package classes
 fun main() {
     //car_obj()
     //playHat()
-    airBnB()
+    //airBnB()
     //sumCalculator()
     //configNetwork()
+    autoCar()
+
 }
 
 fun car_obj() {
@@ -67,4 +69,21 @@ fun configNetwork() {
     println(NetworkConfig)
     val networkCon = NetworkConfig
     println(networkCon)
+}
+
+fun autoCar() {
+    val carBmw = Auto("BMW", "Black", "Turbo V12", 4)
+    val boeing = Plane("Boeing", "White", "Boeing12", 2)
+    val view = View()
+    val button = Button("Submit", "Landscape")
+    val roundButton = roundButton("Submit", "Landscape", 3)
+
+    view.draw()
+    button.draw()
+    roundButton.draw()
+
+//    carBmw.move()
+//    carBmw.stop()
+//    boeing.move()
+//    boeing.stop()
 }
