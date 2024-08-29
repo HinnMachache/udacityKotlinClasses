@@ -76,7 +76,7 @@ fun autoCar() {
     val boeing = Plane("Boeing", "White", "Boeing12", 2)
     val view = View()
     val button = Button("Submit", "Landscape")
-    val roundButton = roundButton("Submit", "Landscape", 3)
+    val roundButton = RoundButton("Submit", "Landscape", 3)
 
     view.draw()
     button.draw()
